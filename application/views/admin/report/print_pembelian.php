@@ -45,7 +45,6 @@
         <?php endforeach; ?>
       </tbody>
     </table>
-
     <div class="w3-right footer"></div>
     <script type="text/javascript" src="<?php echo base_url() ?>assets/print/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="<?php echo base_url() ?>assets/print/printThis.js"></script>

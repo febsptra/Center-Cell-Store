@@ -57,4 +57,4 @@ Ini adalah project yang saya kerjakan untuk menyelsaikan Tugas akhir kuliah(Skri
 - Customer tidak dapat melakukan pembelian jika masih ada pembelian lain yang belum dibayar
 - Grafik keuntungan dan Kerugian.
 - Push Notification jika ada barang yang baru diinput
-- Push Notification untuk melakukan promosi keseluruh perangkat yang mensubscribe website ini
+- Push Notification untuk melakukan promosi keseluruh perangkat yang mensubscribe website ini.

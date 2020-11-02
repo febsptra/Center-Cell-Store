@@ -15,7 +15,6 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-
       <?php } else { ?>
         <!-- JIKA RIWAYAT RETUR ADA -->
         <h3 class="card-header font-weight-bold"><span class="badge badge-primary"><i class="fas fa-cart-arrow-down"></i> Keranjang Belanja Anda :</span></h3>
@@ -29,10 +28,8 @@
                 <th>Nama Barang</th>
                 <th>Jumlah</th>
                 <th>Status</th>
-
               </tr>
             </thead>
-
             <?php
             $no = 1;
             foreach ($riwayat_retur as $rr) : ?>
@@ -51,5 +48,5 @@
 
         </div>
       </div>
-
   </div>
+</div>

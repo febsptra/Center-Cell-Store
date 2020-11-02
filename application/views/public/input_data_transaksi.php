@@ -15,7 +15,6 @@
           <br>
           <!-- FORM -->
           <form class="form-validate" action="<?php echo base_url() . 'penjualan/isi_data'; ?>" method="post">
-
             <div class="row">
               <div class="col-lg-5">
                 <div class="form-group">
@@ -69,7 +68,6 @@
                 </div>
               </div>
             </div>
-
             <div class="form-group">
               <label>Nomor HP</label>
               <input name="no_hp" type="number" value="<?php echo $this->session->userdata('no_hp') ?>" class="form-control" required>
@@ -77,16 +75,11 @@
                 <b>PENTING!</b> Harap masukan nomor HP/WA yang aktif atau dapat dihubungi Jika ada kesalahan saat transaksi !
               </small>
             </div>
-
-
             <p class="text-right"><button type="submit" class="btn btn-primary mt-3">Lanjut ke Pembayaran</button>
           </form>
           <!-- End FORM -->
-
         </div>
       </div>
-
-
-
-
     </div>
+  </div>
+</div>

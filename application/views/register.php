@@ -4,9 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
   <title>DAFTAR</title>
-
   <!-- Custom fonts for this template-->
   <link href="<?php echo base_url() ?>assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
@@ -14,32 +12,23 @@
   <link href="https://fonts.googleapis.com/css2?family=Carme&display=swap" rel="stylesheet">
   <!-- Custom styles for this template-->
   <link href="<?php echo base_url() ?>assets/css/sb-admin-3.css" rel="stylesheet">
-
 </head>
 
-
-
 <div class="container align-items-center">
-
   <!-- Outer Row -->
   <div class="row justify-content-center">
-
     <div class="col-xl-10 col-lg-12 col-md-9">
-
       <div class="card o-hidden my-5">
         <h1 class="card-header text-center text-primary"><i class="fas fa-users"></i><STRONG> DAFTAR AKUN</STRONG></h1>
         <div class="card-body p-0">
           <!-- Nested Row within Card Body -->
           <div class="row">
-
             <div class="col-lg-12">
               <div class="p-5">
                 <div class="text-center">
-
                 </div>
                 <br>
-                <form class="form-validate" action="<?php echo base_url() . 'auth/register';
-                                                    ?>" method="post" enctype="multipart/form-data">
+                <form class="form-validate" action="<?php echo base_url() . 'auth/register'; ?>" method="post" enctype="multipart/form-data">
                   <div class="form-group row">
                     <div class="col-sm-6 mb-3 mb-sm-3">
                       <label>Nama Toko</label>
@@ -103,7 +92,6 @@
                       Silahkan isi dengan nomor telp/WA toko atau pemilik toko yang bisa dihubungi!
                     </small>
                   </div>
-
                   <div class="form-group">
                     <label>Foto Pemilik Toko</label>
                     <input type="file" class="form-control-file" id="foto" name="foto" required data-msg="Mohon upload Foto">
@@ -111,7 +99,6 @@
                       <p class="text-danger">*Foto akan digunakan sebagai foto profil akun! Wajib isi!</p>
                     </small>
                   </div>
-
                   <br>
                   <button type="submit" class="btn btn-primary btn-block mt-3">DAFTAR</button>
                   <hr>
@@ -124,9 +111,6 @@
           </div>
         </div>
       </div>
-
     </div>
-
   </div>
-
 </div>

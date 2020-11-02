@@ -12,11 +12,9 @@
               <?php echo ($pnj->alamat) ?><br>
               <?php echo ($pnj->kota) ?><br>
               <?php echo ($pnj->no_hp) ?></p>
-
             <h5 class="text-uppercase"><strong class="text-dark">KODE TRANSAKSI : <?php echo ($pnj->kode_transaksi) ?></strong></h5>
             <p class="mb-4">Status : <?php echo ($pnj->status_pembayaran) ?></p>
           </div>
-
           <div class="col-12 col-md-6 text-md-right">
             <h5 class="text-uppercase"><strong class="text-dark">TANGGAL TRANSAKSI</strong></h5>
             <p class="mb-4"><?php echo dateindo($pnj->tgl_pembayaran) ?></p>
@@ -32,17 +30,15 @@
                 <?php echo ($pnj->alamat) ?><br>
                 <?php echo ($pnj->kota) ?><br>
                 <?php echo ($pnj->no_hp) ?></p>
-
               <h5 class="text-uppercase"><strong class="text-dark">KODE TRANSAKSI : <?php echo ($pnj->kode_transaksi) ?></strong></h5>
               <p class="mb-4">Status : <?php echo ($pnj->status_pembayaran) ?></p>
             </div>
-
             <div class="col-12 col-md-6 text-md-right">
               <h5 class="text-uppercase"><strong class="text-dark">TANGGAL TRANSAKSI</strong></h5>
               <p class="mb-4"><?php echo dateindo($pnj->tgl_transaksi) ?></p>
             </div>
           <?php endforeach; ?>
-
+          
           <table class="table mr-3 table table-hover table-bordered">
             <thead>
               <tr class="table-head">

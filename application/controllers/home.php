@@ -10,7 +10,7 @@ class Home extends CI_Controller
 		$config['total_rows']  = $this->db->count_all('barang');
 		$config['per_page']    = 12;
 		$config['uri_segment'] = 3;
-		$choice        = $config["total_rows"] / $config['per_page'];
+		$choice                = $config["total_rows"] / $config['per_page'];
 		$config["num_links"]   = floor($choice);
 
 		$config['first_link']      = 'Hal.Pertama';
@@ -58,7 +58,7 @@ class Home extends CI_Controller
 		$price  = $this->input->post('price');
 		$coupon = $this->input->post('coupon');
 		$name   = $this->input->post('name');
-		$data = array(
+		$data   = array(
 			'id'     => $id,
 			'qty'    => $qty,
 			'price'  => $price,

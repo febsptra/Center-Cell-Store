@@ -166,10 +166,10 @@ class Data_barang extends CI_Controller
 		$this->session->set_flashdata(
 			'edit_sukses',
 			'<div class="alert alert-info alert-dismissible fade show" role="alert">
-					 Data Sukses Diedit.
-					 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-					 <span aria-hidden="true">&times;</span>
-					 </button></div>'
+			Data Sukses Diedit.
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+			</button></div>'
 		);
 		redirect('admin/data_barang/index');
 	}
@@ -183,23 +183,22 @@ class Data_barang extends CI_Controller
 		$this->session->set_flashdata(
 			'hapus_sukses',
 			'<div class="alert alert-danger alert-dismissible fade show" role="alert">
-					 Data Telah Sukses Dihapus.
-					 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-					 <span aria-hidden="true">&times;</span>
-					 </button></div>'
+			Data Telah Sukses Dihapus.
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+			</button></div>'
 		);
 		redirect('admin/data_barang/index');
 	}
 
 	public function cari_barang()
 	{
-		$config['base_url']    = site_url('admin/data_barang/index');
-		$config['total_rows']  = $this->db->count_all('barang');
-		$config['per_page']    = 10;
-		$config['uri_segment'] = 4;
-		$choice                = $config["total_rows"] / $config['per_page'];
-		$config["num_links"]   = floor($choice);
-
+		$config['base_url']        = site_url('admin/data_barang/index');
+		$config['total_rows']      = $this->db->count_all('barang');
+		$config['per_page']        = 10;
+		$config['uri_segment']     = 4;
+		$choice                    = $config["total_rows"] / $config['per_page'];
+		$config["num_links"]       = floor($choice);
 		$config['first_link']      = 'Hal.Pertama';
 		$config['last_link']       = 'Hal.Terakhir';
 		$config['next_link']       = 'Lanjut ';
@@ -222,10 +221,9 @@ class Data_barang extends CI_Controller
 		$this->pagination->initialize($config);
 		$data['page']       = ($this->uri->segment(4)) ? $this->uri->segment(4) : 0;
 		$data['pagination'] = $this->pagination->create_links();
-
-		$data['supplier'] = $this->model_admin->data_supplier()->result();
-		      $keyword    = $this->input->post('keyword');
-		$data['barang']   = $this->model_admin->cari_barang($keyword, $config["per_page"], $data["page"]);
+		$data['supplier']   = $this->model_admin->data_supplier()->result();
+		      $keyword      = $this->input->post('keyword');
+		$data['barang']     = $this->model_admin->cari_barang($keyword, $config["per_page"], $data["page"]);
 		$this->load->view('admin/template/header');
 		$this->load->view('admin/template/sidebar');
 		$this->load->view('admin/data_barang', $data);
